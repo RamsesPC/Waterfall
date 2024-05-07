@@ -11,8 +11,8 @@ const useImageURL = () => {
       try {
         // Realizando ambas solicitudes simultáneamente utilizando Promise.all
         const responses = await Promise.all([
-          fetch("https://jsonplaceholder.typicode.com/phtos/1", { mode: "cors" }),
-          fetch("https://jsonplaceholder.typicode.com/potos/2", { mode: "cors" })
+          fetch("https://jsonplaceholder.typicode.com/photos/1", { mode: "cors" }),
+          fetch("https://jsonplaceholder.typicode.com/photos/2", { mode: "cors" })
         ]);
 
         const data = await Promise.all(responses.map(response => {
